@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building Calculator App'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Testing Calculator App'
+            }
+        }
+    }
+}
